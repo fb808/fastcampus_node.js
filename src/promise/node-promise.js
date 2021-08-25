@@ -16,3 +16,4 @@ function readFileInPromise(fileName) {
 }
 
 readFileInPromise('.gitignore').then((value) => console.log(value))
+fs.promises.readFile('.gitignore', 'utf-8').then((value) => console.log(value))
